@@ -164,8 +164,8 @@ if st.button("Run Simulation"):
         plt.plot(time_q, heater_output_q, label="Heater Output (Q-Learning)", color="lightblue", linestyle=":")
         plt.plot(time_pid, heater_output_pid, label="Heater Output (PID)", color="coral", linestyle=":")
 
-    plt.plot([time_q[0], time_q[-1]]), [outside_temperature, outside_temperature], label="Outside Temperature", color
-  plt.plot([time_q[0], time_q[-1]]), [outside_temperature, outside_temperature], label="Outside Temperature", color="gray")
+    plt.plot([time_q[0], time_q[-1]], [outside_temperature, outside_temperature], label="Outside Temperature", color="red")
+    plt.plot([time_q[0], time_q[-1]], [outside_temperature, outside_temperature], label="Outside Temperature", color="gray")
 
     plt.axhline(y=thermostat_setting, color='r', linestyle='--', label="Thermostat Setting")
     plt.axhline(y=thermostat_setting + 0.5, color='g', linestyle='--', label="Upper Threshold")
